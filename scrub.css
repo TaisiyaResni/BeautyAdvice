@@ -1,0 +1,568 @@
+* {padding: 0; margin: 0}
+
+body {
+  background-image: URL("background7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.mainContainer {
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-image: url("phone8.png");
+  background-size: 100% 350px;
+  height: 250px;
+}
+
+/*Extra*/
+
+p.firstPh {
+  margin-top: 30px;
+  text-align: center;
+  font-family: Caviar Dreams;
+  font-size: 30px;
+  color: #271a0c;
+}
+
+p.secondPh {
+  text-align: center;
+  top: 50px;
+  color: #271a0c;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #271a0c;
+  display: block;
+  text-align: center;
+}
+
+p.thirdPh {
+  color: #271a0c;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Caviar Dreams;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 50px;
+}
+
+.container1 > div.allCategories {
+  padding: 0.1em;
+  position: relative;
+  /*width: 270px;
+  height: 270px;*/
+  background-color: #271a0c;
+  border-radius: 2px;
+  opacity: 0.7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: 1s;
+  border-radius: 5px;
+}
+
+#Ph {
+  text-align: right;
+  margin: 15px;
+  font-size: 22px;
+  font-family: Caviar Dreams;
+  color: white;
+  z-index: 100;
+}
+
+#image {
+  width: 200px;
+  height: 210px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: block;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+div.link {
+  position: relative;
+}
+
+#text {
+  margin-left: 15px;
+  font-family: Caviar Dreams;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+button {
+  position: absolute;
+  padding: 20px 60px;
+  background: URL("link.png");
+  background-size: cover;
+  border: none;
+  z-index: 100;
+  bottom: 8px;
+  left: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+div.modalWindowBackground {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+div.modalWindowContent {
+  background-image: url(moda.jpg);
+  background-size: cover;
+  width: 70%;
+  height: 70%;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eee7df;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+
+.close {
+  color: #271a0c;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text {
+  font-family: Caviar Dreams;
+  font-size: 20px;
+  text-align: center;
+}
+
+.modalImg {
+  width: 180px;
+  height: 250px;
+  position: relative;
+  top: 10px;
+  left: 50%;
+  margin-bottom: 30px;
+  transform: translateX(-50%);
+}
+
+/*.textFloat {
+  font-family: Caviar Dreams;
+  font-size: 20px;
+  text-align: center;
+}*/
+
+@font-face {
+  font-family: 'Caviar Dreams';
+  src: URL('CaviarDreams.ttf') format('truetype');
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1150px) {
+
+
+    .container1 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav ul li a {
+      padding: 17px;
+    }
+
+    .ul1 {
+      font-size: 21px;
+      margin-left: 11px;
+    }
+
+    p.firstPh {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+
+    p.secondPh {
+      font-size: 20px;
+    }
+
+    p.thirdPh {
+      font-size: 22px;
+    }
+
+    /*#Ph {
+      position: relative;
+      font-size: 35px;
+      right: 10%;
+      top: 40%;
+    }
+
+    #image {
+      width: 280px;
+      height: 280px;
+      margin-left: 60px;
+      margin-bottom: 30px;
+    }*/
+
+    #image {
+      width: 180px;
+      height: 200px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    #text {
+      margin-left: 25px;
+      font-size: 17px;
+    }
+
+    button {
+      padding: 20px 50px;
+      left: 80px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+
+    nav ul li a {
+      padding: 15px;
+    }
+
+    .ul1 {
+      font-size: 19px;
+      margin-left: 10px;
+    }
+
+    .container1 {
+    grid-template-columns: 1fr 1fr;
+    }
+
+    p.firstPh {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+
+    p.secondPh {
+      font-size: 20px;
+    }
+
+    p.thirdPh {
+      font-size: 22px;
+    }
+
+    /*#Ph {
+      position: relative;
+      font-size: 33px;
+      right: 2%;
+      top: 40%;
+    }
+
+    #image {
+      width: 240px;
+      height: 240px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }*/
+
+    #image {
+      width: 180px;
+      height: 200px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    #text {
+      margin-left: 25px;
+      font-size: 17px;
+    }
+
+    button {
+      padding: 20px 60px;
+      left: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+
+    nav ul li a {
+      padding: 13px;
+    }
+
+    .container1 {
+    grid-template-columns: 1fr;
+    }
+
+    .ul1 {
+    font-size: 18px;
+    margin-left: 8px;
+    }
+
+    p.firstPh {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+
+    p.secondPh {
+      font-size: 20px;
+    }
+
+    p.thirdPh {
+      font-size: 22px;
+    }
+
+    /*#Ph {
+      position: relative;
+      font-size: 33px;
+      right: 2%;
+      top: 40%;
+    }
+
+    #image {
+      width: 240px;
+      height: 240px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }*/
+
+    #image {
+      width: 180px;
+      height: 200px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    #text {
+      margin-left: 25px;
+      font-size: 17px;
+    }
+
+    button {
+      padding: 20px 50px;
+      left: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 413px) and (max-width: 500px) {
+
+    nav ul li a {
+      padding: 10px;
+    }
+
+    .ul1 {
+      font-size: 17px;
+      margin-left: 6px;
+    }
+
+    .container1 {
+      grid-template-columns: 1fr;
+    }
+
+    p.firstPh {
+      margin-top: 30px;
+      font-size: 25px;
+    }
+
+    p.secondPh {
+      font-size: 15px;
+    }
+
+    p.thirdPh {
+      font-size: 15px;
+      bottom: 10px;
+    }
+
+    #image {
+      width: 180px;
+      height: 200px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    #text {
+      margin-left: 25px;
+      font-size: 17px;
+    }
+
+    button {
+      padding: 20px 50px;
+      left: 80px;
+    }
+
+}
+
+@media only screen and (min-width: 359px) and (max-width: 412px) {
+
+    nav ul li a {
+      padding: 10px;
+    }
+
+    .ul1 {
+      font-size: 17px;
+      margin-left: 6px;
+    }
+
+    .container1 {
+    grid-template-columns: 1fr;
+    }
+
+    p.firstPh {
+      margin-top: 30px;
+      font-size: 25px;
+    }
+
+    p.secondPh {
+      font-size: 15px;
+    }
+
+    p.thirdPh {
+      font-size: 15px;
+    }
+
+    #image {
+      width: 180px;
+      height: 200px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    #text {
+      margin-left: 25px;
+      font-size: 17px;
+    }
+
+    button {
+      padding: 20px 50px;
+      left: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 322px) and (max-width: 358px) {
+
+    nav ul li a {
+      padding: 10px;
+    }
+
+    .ul1 {
+      font-size: 17px;
+      margin-left: 6px;
+    }
+
+    .container1 {
+    grid-template-columns: 1fr;
+    }
+
+    p.firstPh {
+      margin-top: 30px;
+      font-size: 25px;
+    }
+
+    p.secondPh {
+      font-size: 15px;
+    }
+
+    p.thirdPh {
+      font-size: 15px;
+    }
+
+    #image {
+      width: 180px;
+      height: 200px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    #text {
+      margin-left: 25px;
+      font-size: 17px;
+    }
+
+    button {
+      padding: 20px 40px;
+      left: 65px;
+    }
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 321px) {
+
+    nav ul li a {
+      padding: 10px;
+    }
+
+    .ul1 {
+      font-size: 17px;
+      margin-left: 6px;
+    }
+
+    .container1 {
+    grid-template-columns: 1fr;
+    }
+
+    p.firstPh {
+      margin-top: 30px;
+      font-size: 25px;
+    }
+
+    p.secondPh {
+      font-size: 15px;
+    }
+
+    p.thirdPh {
+      font-size: 15px;
+    }
+
+    #Ph {
+      margin: 15px;
+      font-size: 18px;
+    }
+
+    #image {
+      width: 140px;
+      height: 170px;
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    #text {
+      margin-left: 17px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 15px 40px;
+      left: 45px;
+    }
+
+}

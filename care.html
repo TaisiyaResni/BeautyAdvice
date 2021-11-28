@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="care.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="mainContainer">
+    <p align="center" class="firstPharagraph">Beauty advice</p>
+    <p align="center" class="secondParagraph">уход за кожей и волосами в домашних условиях</p>
+  </div>
+
+  <div class="container1">
+
+    <div class="allCategories" onclick="goToScrub()">
+      <p id="Ph">Скрабы</p>
+      <div class="image">
+        <img src="scrub.png" id="image">
+      </div>
+    </div>
+
+    <div class="allCategories" onclick="goToWrapping()">
+      <p id="Ph">Обертывания</p>
+      <div class="image">
+          <img src="wrapping.png" id="image">
+      </div>
+    </div>
+
+    <div class="allCategories" onclick="goToFace()">
+      <p id="Ph">Маски для лица</p>
+      <div class="image">
+        <img src="face.png" id="image">
+      </div>
+    </div>
+
+    <div class="allCategories" onclick="goToHair()">
+      <p id="Ph">Маски для волос</p>
+      <div class="image">
+        <img src="hair.png" id="image">
+      </div>
+    </div>
+
+  </div>
+
+      <p class="thirdParagraph">With love to you...</p>
+
+<script>
+
+function goToScrub() {
+  window.location.href = "scrub.html";
+}
+
+function goToWrapping() {
+  window.location.href = "wrapping.html";
+}
+
+function goToFace() {
+  window.location.href = "face.html";
+}
+
+function goToHair() {
+  window.location.href = "hair.html";
+}
+
+</script>
+
+</body>
+</html>
