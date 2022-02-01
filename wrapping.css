@@ -116,8 +116,8 @@ button {
   background-size: cover;
   border: none;
   z-index: 100;
-  bottom: 8px;
-  left: 122px;
+  bottom: 15px;
+  left: 100px;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
